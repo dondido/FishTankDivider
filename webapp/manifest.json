@@ -1,0 +1,18 @@
+{
+  "manifest_version":2,
+  "name":"Fish Tank Divider",
+  "description":" Slide up and down to control the barrier and define boarders allowing fish to establish different territories..",
+  "version":"1",
+  "icons":{
+    "128":"128x128.png"
+  },
+  "app":{
+    "launch":{
+      "web_url":"http://fishtankdivider.publicgamelibrary.com/"
+    }
+  },
+  "permissions":[
+    "unlimitedStorage"
+  ],
+  "offline_enabled":true
+}
