@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html manifest="fishtankdivider.appcache">
+   <head>
+      <title>Aquarium Fish Tank Divider</title>
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+      <link rel="stylesheet" type="text/css" href="gamestyle.css">
+   </head>
+   <body>
+      <div id="game">
+         <div id="stage">
+            <div class="middle-wall">
+               <div id="wall-filter">
+                  <div id="top-wall"></div>
+                  <div id="bottom-wall"></div>
+               </div>
+            </div>
+            <div id="level-entities"></div>
+         </div>
+         <div id="level-end">
+            <a class="standard-btn" href="#level-select">continue</a>
+            <div class="lvl-stats">
+               <ul class="stars">
+                  <li>&#9733;</li>
+                  <li>&#9733;</li>
+                  <li>&#9733;</li>
+               </ul>
+               <table class="show-score">
+                  <thead>
+                     <tr>
+                        <th colspan="2">Statistics</th>
+                     </tr>
+                  <thead>
+                  <tbody>
+                     <tr>
+                        <td>Games</td>
+                        <td class="completed">0</td>
+                     </tr>
+                     <tr>
+                        <th>Score</th>
+                        <th>pts</th>
+                     </tr>
+                     <tr>
+                        <td>Last:</td>
+                        <td class="last-score">0</td>
+                     </tr>
+                     <tr>
+                        <td>Best:</td>
+                        <td class="best-score">0</td>
+                     </tr>
+                     <tr>
+                        <td>Average:</td>
+                        <td class="average-score">0</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div id="level-select">
+            <ul id="level-list">
+            </ul>
+         </div>
+         <div id="about">
+            <a class="standard-btn" href="#title-screen">main menu</a>
+            <section>
+               <h2>Reasons to Divide a Tank</h2>
+               <p>
+                  <span>Whether it's due to aggression, territorialism or just plain old size difference it's pretty safe to say anyone who keeps more than one non-schooling fish in a tank for a long time is going to need to separate them somewhere along the line. Now let's list the reasons for dividing fish.</span>
+               <ul>
+                  <li>Aggression in aquariums happens for many reasons the main being that the fish just don't get along either because their species are not compatible or just as common their personalities clash. Two scenarios in which this aggression could occur are; fish such as gouramis and betas (who exhibit aggression towards each other consistently) or a convict who just doesn't like other fish because that's just the way he is.</li>
+                  <li>Territorialism: fishes need to have its own or their own (in the case of a breeding pair) space, in which no other fish are allowed, is also one of the major reasons for separating fish. This is often seen in the case of breeding pairs who in an attempt to protect their young protect their breeding site.</li>
+                  <li>Size difference: bigger fish will if they are inclined, eat smaller fish so if you want the smaller fish to keep on swimming you might just need to separate them.</li>
+               </ul>
+               </p>
+            </section>
+         </div>
+         <div id="instructions">
+            <a class="standard-btn" href="#title-screen">main menu</a>
+            <section>
+               <h2>How To Play</h2>
+               <p>There is a physical barrier which divides the aquarium fish tank into two separate areas. Slide up and down to control the barrier and define boarders allowing fish to establish different territories. Once the fish is separated players passes the level. Players must finish the level to unlock the next one, and based on his/her performance, he/she will be given a mininum of 1 or maximum of 3 stars for the level. Stars are used as a format of a ranking system.  With one being for simpliy completing the level, two for finishing the level while also having a average time, and three for finishing the level in the shortest time possible.</p>
+            </section>
+         </div>
+         <div id="title-screen">
+            <h1>Aquarium Fish Tank Divider</h1>
+            <div><div class="fish1"></div></div>
+            <nav>
+               <a class="standard-btn" href="#level-select">play</a><!-- 
+            --><a class="standard-btn" href="#about">about</a><!-- 
+            --><a class="standard-btn" href="#instructions">instructions</a><!-- 
+            --><a class="standard-btn" href="https://github.com/dondido/FishTankDivider" target="_blank">source code</a><!-- 
+            --><a class="standard-btn" href="http://publicgamelibrary.com" target="_blank">more games</a>
+            </nav>
+         </div>
+         <ul class="options-menu">
+            <li class="toggle-game-state-btn option-btn" data-fn="toggleGameState"><span class="play-icon"></span></li><!-- 
+            --><li class="sound-btn option-btn" data-fn="toggleSnd"><span class="sound-on-icon"></span></li><!-- 
+            --><li class="exit-btn option-btn" data-fn="exitGame"><span class="close-icon">&#10005;</span></li><!--
+            --><li class="options-icon"><span class="gear-icon"></span></li>
+         </ul>
+         <div>
+            <ul>
+               <li class="level-tile locked">
+                  <a class="btn">
+                     <span class="lvl-n"></span>
+                      <div class="padlock">
+                       <div class="padlock-loop"></div>
+                       <div class="padlock-body"></div>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <div class="fish5 fish" data-size="30,30">
+            </div>
+            <div class="fish6 fish" data-size="60,40">  
+            </div>
+            <div class="fish7 fish" data-size="105,25">  
+            </div>
+            <div class="fish8 fish" data-size="52,40">  
+            </div>
+            <div class="fish10 fish" data-size="54,50">  
+            </div>
+            <div class="fish11 fish" data-size="60,40">  
+            </div>
+         </div>
+      </div>
+      <audio id="music_game" preload loop>
+         <source src="music_game.mp3">
+      </audio>
+      <audio id="star" preload>
+         <source src="star.mp3">
+      </audio>
+      <script src="leveldata.js"></script>
+      <script src="fishtrap.js"></script>
+   </body>
+</html>
